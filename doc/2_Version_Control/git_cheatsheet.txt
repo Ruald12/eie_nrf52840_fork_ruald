@@ -31,4 +31,18 @@ h.  git fetch
         description:
             grabs the currnet version of the remote repository and downloads it to your local repository, basically how you keep you local version up to date with the remote repository
 
-    
+i.  git add
+        description: 
+            adds the file you wish to commit to the 'staging area', this is the first step in commiting and pushing a version
+        argument:
+            file name after
+
+j. git status
+        description:
+            checks the current status of all files to see if any are not up to date and checks what files have been staged, used as a check
+
+k. git log
+        description: 
+            shows you all past commits
+        note:
+            press q to exit the list
