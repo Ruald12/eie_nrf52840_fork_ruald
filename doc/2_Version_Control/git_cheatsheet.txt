@@ -1,0 +1,34 @@
+a.  git commit
+        description:
+            commits an updated version of your code and files to your repository
+
+b.  git branch
+        description:
+            Creates a new branch within your workflow of commits or updates. Used when you want to save a version sepratly while going back to work on it before the split, such as a risky bugfix
+        arguments:
+            Can include the name of the branch as an argument at the end
+
+c.  git checkout
+        description:
+            Used to litearlly check out a diffrent commit, used to navigate workflow and versions including branches
+        arguments:
+            The branch name that you want to checkout is the argument
+
+d.  git pull
+        description:
+            fetches and merges (or rebases ) from your remote repository to your local version of the repository
+
+e.  git push
+        description:
+            pushes your local repository updates to the remote repository, how you send your updates and edits to the remote repository 
+f.  git merge
+        description:
+            merges two branches of commits
+g.  git rebase
+        description:
+            moves a commit from one branch to follow the path of a diffrent path, basically changes the parent and workflow of a commit by copying it over to another branch
+h.  git fetch
+        description:
+            grabs the currnet version of the remote repository and downloads it to your local repository, basically how you keep you local version up to date with the remote repository
+
+    
