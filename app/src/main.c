@@ -13,6 +13,8 @@
 
 
 int main(void) {
+  LED_init();
+
   while(1){
     
   }
