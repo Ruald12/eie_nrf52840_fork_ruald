@@ -16,18 +16,12 @@ int main(void) {
   LED_init();
 
   while(1){
-    LED_set(LED0, LED_ON);
-    LED_set(LED1, LED_ON);
-    k_msleep(250);
-    LED_set(LED2, LED_ON);
-    LED_set(LED3, LED_ON);
-    k_msleep(250);
-    LED_set(LED0, LED_OFF);
-    LED_set(LED2, LED_OFF);
-    k_msleep(250);
-    LED_set(LED1, LED_OFF);
-    LED_set(LED3, LED_OFF);
-    k_msleep(250);
+    LED_blink(LED0, LED_2HZ);
+    LED_blink(LED1, LED_4HZ);
+    LED_blink(LED2, LED_4HZ);
+    LED_blink(LED3, LED_4HZ);
+
+    k_msleep(1000);
     
   }
   return 0;
