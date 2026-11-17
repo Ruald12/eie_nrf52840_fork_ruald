@@ -15,14 +15,20 @@
 int main(void) {
   LED_init();
 
+    int count = 0;
+
   while(1){
+
     LED_toggle(LED0);
-    LED_toggle(LED1);
-    LED_toggle(LED2);
-    LED_toggle(LED3);
-    k_msleep(500);
-
-
+    
+    if (count % 2 == 0) {
+      LED_toggle(LED1);
+      LED_toggle(LED2);
+      LED_toggle(LED3);
+    }
+    
+    count++;
+    k_msleep(250);
   }
   return 0;
 }
